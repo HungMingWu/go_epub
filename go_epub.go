@@ -44,7 +44,7 @@ func translateFromHtmlToMarkdown(input string, output string) {
 
 func main() {
 	//      https://github.com/jacpy/GoDemo
-	url := "http://www.kancloud.cn/digest/hevc-fred/"
+	url := os.Args[1]
 	p, err := goquery.NewDocument(url)
 	if err != nil {
 		panic(err)
